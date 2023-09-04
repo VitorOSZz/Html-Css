@@ -1,0 +1,178 @@
+@font-face {
+    font-family: idroid;
+
+    src: url("fontes/idroid.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0px;
+}
+/* VAR??? */
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa765;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+/* ID */
+h1#cabecalho {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 52, 0);
+    padding: 25px 0px 0px 0px;
+}
+h2#subtitulo {
+    font-size: 1.5em;
+    color: white;
+    text-align: justify;
+    text-align: center;
+    padding: 1px 75px 1px 75px;
+    margin: 4% 6%;
+    text-shadow: 1px 1px rgb(87, 87, 87);
+}
+#footer {
+    font-size: 20px;
+    text-align: center;
+    background-color: darkgreen;
+    padding: 10px;
+    margin: 15px 0px 0px 0px;
+}
+#info {
+    border-radius: 10px 10px 10px 10px;
+    margin: 1%;
+    background-color: rgba(127, 197, 185, 0.806);
+}
+#info p {
+    padding: 7px;
+}
+#info abbr {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+#info ul {
+    columns: 2;
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+}
+/* Class */
+h2.enfeitezinho {
+    border-right-style: dotted;
+    background-image: linear-gradient(to right, var(--cor1),rgba(255, 255, 255, 0));/* !!! Com internet colocar um to-right no generator*/
+    
+}
+.link {
+    color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+}
+.link::after {
+    content: '\00A0\🔗';
+}
+.link:hover {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-decoration-line: underline;
+}
+.bugdroid {
+    max-width: 350px;
+    width: 50%;
+}
+.irina-blok {
+    margin: 0% 2% 0% 2%;
+}
+.video {
+    background-color: var(--cor4);
+    padding: 20px;
+    padding-bottom: 400px;
+    text-align: center;
+    position: relative;
+}
+.video > p >iframe {
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    width: 60%;
+    height: 90%;
+}
+.autor {
+    color: white;
+}
+.name{
+    text-decoration-line: underline;
+}
+/* Body */
+body {
+    background-color: var(--cor0);
+    margin: 0px 0px;
+    width: 100%;
+}
+header {
+    background: var(--cor3);
+    background: linear-gradient(0deg, rgba(47,168,102,1) 0%, rgba(26,92,55,1) 85%, rgba(26,92,55,1) 100%);
+    width: 100%;
+    border-radius: 5px;
+}
+
+header > div {
+    box-shadow: 1px 1px 20px 1px;
+}
+header a {
+    font-family: sans-serif;
+    font-weight: bold;    
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+header a:hover {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    transition-duration: 0.7s;
+}
+main {
+    margin: auto;
+
+    border-radius: 0px 0px 5px 5px;
+    padding: 1px 0px;
+    background: var(--cor0);
+    min-width: 300px;
+    max-width: 1100px;
+    box-shadow: 2px 1px 10px 0px;
+}
+main > h2 {
+    font-size: 1.7em;
+    font-family: idroid;
+    color: var(--cor4);
+    padding: 0px 0px 0px 15px;
+
+}
+main > p {
+    text-indent: 30px;
+    margin: 10px;
+    font-size:20px;
+}
+#info > h3 {
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    padding: 5px;
+    background-color: var(--cor3);
+}
+#info > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+

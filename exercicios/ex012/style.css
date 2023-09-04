@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #b7c1fa, #9DACFF, #4a65fd);
+    background-attachment: fixed;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: #3c1e49;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    color: #292e24;
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'REM', sans-serif;
+}

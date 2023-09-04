@@ -1,0 +1,55 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Bricolage+Grotesque:wght@500&display=swap');
+
+/* ------ */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+/* ID */
+
+/* Class */
+
+/* Body */
+body {
+    background: rgb(219,255,205);
+    background: linear-gradient(0deg, rgba(219,255,205,1) 69%, rgba(139,55,231,0.9752275910364145) 100%);
+    background-attachment: fixed; 
+}
+
+h1 {
+    /* font: italic bolder 20px 'Opens Sans', Arial; */
+    font-family: 'Bricolage Grotesque', sans-serif, 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    color: #2D2E2E;
+    padding: 20px;
+    text-shadow: 1px 1px #7c7c7c;
+}
+
+li::before {
+    content: ' [Admin] ';
+    color: rgb(173, 0, 0);
+    font-family: 'Bricolage Grotesque', sans-serif, 'Open Sans', sans-serif;
+}
+
+.Vitor::after {
+    content: ' [The Best] ';
+    color: darkblue;
+    font-family: 'Bricolage Grotesque', sans-serif, 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.Vitor::first-line {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+main {
+    font-size: 165px;
+    text-align: justify;
+    text-align: center;
+}

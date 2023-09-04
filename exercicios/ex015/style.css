@@ -1,0 +1,71 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Bricolage+Grotesque:wght@500&display=swap');
+
+/* ------ */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ID */
+#Principal {
+    font-size: 18px;
+}
+
+/* Class */
+.NumeroPrincipais {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.destaque {
+    background-color: rgb(163, 163, 163);
+}
+
+.subtitulo {
+    color: rgb(70, 70, 70);
+}
+
+/* Body */
+body {
+    background: linear-gradient(0deg, rgba(168,163,163,1) 0%, rgba(205,236,247,1) 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    /* font: italic bolder 20px 'Opens Sans', Arial; */
+    font-family: 'Bricolage Grotesque', sans-serif, 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    color: #2D2E2E;
+    padding: 20px;
+    text-shadow: 1px 1px #7c7c7c;
+}
+
+div > main {
+    display:none
+}
+
+div:hover > main{
+    display:inline-block;
+}
+
+.link {
+    background-color: wheat;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.link:visited {
+    background-color: greenyellow;
+
+}
+
+link:link {
+    background-color: black;
+}
+
+.link:hover {
+    background-color: red;
+}

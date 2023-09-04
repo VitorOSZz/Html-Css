@@ -1,0 +1,66 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Bricolage+Grotesque:wght@500&display=swap');
+
+/* ------ */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    margin: auto;
+}
+
+/* ID */
+
+/* Class */
+
+.titulo {
+    text-align: justify;
+    text-align: center;
+}
+
+.blocao {
+    background-color: rgb(158, 128, 67);
+    display: block;
+    /* margin */
+    margin: 5px;
+    margin-inline-end: 0px;
+    /* padding */
+    padding: 75px 25px;
+    /* border */
+    border-color: rgb(100, 80, 41);
+    border-style: solid;
+    border-width: 25px;
+    border-radius: 10px;
+    /* height and width */
+    height: 250px;
+    width: 300px;
+    /* Local */
+    margin: auto;
+}
+
+.baixar {
+    margin: auto;
+    margin-top: 10px;
+    
+}
+/* Body */
+
+body {
+    background: rgb(245,245,245);
+    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(211,255,194,1) 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    /* padding */
+    padding-top: 25px;
+    padding-right: 85px;
+    padding-bottom: 85px;
+    padding-left: 50px;
+}
+
+p {
+    text-align: justify;
+}
