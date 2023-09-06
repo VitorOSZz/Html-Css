@@ -138,6 +138,7 @@ header a:hover {
     transition-duration: 0.7s;
 }
 main {
+    background-color: white;
     margin: auto;
 
     border-radius: 0px 0px 5px 5px;
