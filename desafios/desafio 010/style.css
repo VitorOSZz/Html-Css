@@ -11,8 +11,8 @@
 }
 /* VAR??? */
 :root {
-    --cor0: #ebe5c5;
-    --cor1: #83e1ad;
+    --cor0: rgb(235, 229, 197);
+    --cor1: rgb(131, 225, 173);
     --cor2: #3ddc84;
     --cor3: #2fa765;
     --cor4: #1a5c37;
@@ -42,6 +42,7 @@ h2#subtitulo {
     background-color: darkgreen;
     padding: 10px;
     margin: 15px 0px 0px 0px;
+    font-weight: 500;
 }
 #info {
     border-radius: 10px 10px 10px 10px;
@@ -64,22 +65,14 @@ h2#subtitulo {
 }
 /* Class */
 h2.enfeitezinho {
-    border-right-style: dotted;
-    background-image: linear-gradient(to right, var(--cor1),rgba(255, 255, 255, 0));/* !!! Com internet colocar um to-right no generator*/
+
+    background-image: linear-gradient(to right, var(--cor1),white);
     
 }
+
 .link {
-    color: var(--cor4);
-    font-weight: bold;
-    background-color: var(--cor1);
-}
-.link::after {
-    content: '\00A0\🔗';
-}
-.link:hover {
-    color: var(--cor3);
+    color: var(--cor5);
     background-color: var(--cor2);
-    text-decoration-line: underline;
 }
 .bugdroid {
     max-width: 350px;
@@ -89,6 +82,7 @@ h2.enfeitezinho {
     margin: 0% 2% 0% 2%;
 }
 .video {
+    text-decoration: none;
     background-color: var(--cor4);
     padding: 20px;
     padding-bottom: 400px;
@@ -149,6 +143,20 @@ main {
     max-width: 1100px;
     box-shadow: 2px 1px 10px 0px;
 }
+
+main > p a {
+    color: var(--cor3);
+    background-color: var(--cor1);
+    text-decoration: none;
+}
+main > p a::after {
+    content: '\00A0\🔗';
+}
+main > p a:hover {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-decoration-line: underline;
+}
 main > h2 {
     font-size: 1.7em;
     font-family: idroid;
@@ -178,3 +186,15 @@ img {
     width: 80%;
 }
 
+strong {
+    color: var(--cor4);
+    text-shadow:var(--cor3) 1px 1px 1px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+main a:visited {
+    color: var(--cor5);
+}
