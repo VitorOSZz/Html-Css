@@ -125,6 +125,9 @@ header {
 header > div {
     box-shadow: 1px 1px 20px 1px;
 }
+header nav {
+    padding: 13px;
+}
 header a {
     font-family: sans-serif;
     font-weight: bold;    
