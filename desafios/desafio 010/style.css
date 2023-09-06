@@ -71,8 +71,8 @@ h2.enfeitezinho {
 }
 
 .link {
-    color: var(--cor5);
-    background-color: var(--cor2);
+    color: var(--cor4);
+    background-color: var(--cor3);
 }
 
 .link a::after {
