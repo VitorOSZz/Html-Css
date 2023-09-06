@@ -144,7 +144,7 @@ main {
     padding: 1px 0px;
     background: var(--cor0);
     min-width: 300px;
-    max-width: 1100px;
+    max-width: 1200px;
     box-shadow: 2px 1px 10px 0px;
 }
 main > h2 {
