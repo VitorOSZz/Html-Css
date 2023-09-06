@@ -75,6 +75,15 @@ h2.enfeitezinho {
     background-color: var(--cor2);
 }
 
+.link a::after {
+    content: '\00A0\🔗';
+}
+.link a:hover {
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-decoration-line: underline;
+}
+
 .bugdroid {
     max-width: 350px;
     width: 50%;
