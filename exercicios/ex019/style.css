@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ID */
+#box01 {
+    background-color: cyan;
+}
+#box02 {
+    background-image: linear-gradient(to bottom, white, gray);
+}
+#box03 {
+    background-image: url(photo/Bufunfa\ Certa.jpg);
+}
+/* Class */
+.box {
+    display: inline-block;
+    border: 3px solid black;
+    width: 250px;
+    height: 200px;
+    padding: 15px;
+    margin: 70px;
+    text-align: center;
+}
+/* body */
+body {
+
+    background-image: url(photo/draconic.png);
+}
