@@ -24,7 +24,7 @@
     background-position: 100% 50%;
 }
 
-#background1 p, #background2 p {
+#background1 section, #background2 section {
     text-align: left;
     padding: 0;
     display: inline-block;
