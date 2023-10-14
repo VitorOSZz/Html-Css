@@ -95,11 +95,12 @@ footer > section {
     color: white;
 }
 
-section a:hover {
+section a:hover, p a:hover {
     color: white;
     text-decoration: underline;
 }
 
-section a:link {
+section a:link, p a:link {
+    font-weight: bold;
     color: white;
 }
