@@ -10,57 +10,80 @@
             margin-top: 25vh;
             width: 500px;
         }
-        tr > td {
+        caption {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+        thead th{
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            font-weight: 600;
+        }
+        tbody {
+            background-color: white;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        tbody tr > td {
             border: 1px solid black;
             text-align: center;
+            vertical-align: middle;
         }
+
     </style>
     <title>Tabelado</title>
 </head>
 <body>
     <h1>Now I'am a man tabelado!</h1>
 
-    <table>
-        <tr>
-            <td>Day</td>
-            <td>1- Aula HTML</td>
-            <td>2- Aula HTML</td>
-        </tr>
-        <tr><!--Monday-->
-            <td>Monday</td>
-            <td><input type="checkbox" name="FirstHTMLMonday" id="ClassFirstHTMLMonday"></td>
-            <td><input type="checkbox" name="SecondHTMLMonday" id="ClassSecondHTMLMonday"></td>
-        </tr>
-        <tr><!--Tuesday-->
-            <td>Tuesday</td>
-            <td><input type="checkbox" name="FirstHTMLTuesday" id="ClassFirstHTMLTuesday"></td>
-            <td><input type="checkbox" name="SecondHTMLTuesday" id="ClassSecondHTMLTuesday"></td>
-        </tr>
-        <tr><!--Wednesday-->
-            <td>Wednesday</td>
-            <td><input type="checkbox" name="FirstHTMLWednesday" id="ClassFirstHTMLWednesday"></td>
-            <td><input type="checkbox" name="SecondHTMLWednesday" id="ClassSecondHTMLWednesday"></td>
-        </tr>
-        <tr><!--Thursday-->
-            <td>Thursday</td>
-            <td><input type="checkbox" name="FirstHTMLThursday" id="ClassFirstHTMLThursday"></td>
-            <td><input type="checkbox" name="SecondHTMLThursday" id="ClassSecondHTMLThursday"></td>
-        </tr>
-        <tr><!--Friday-->
-            <td>Friday</td>
-            <td><input type="checkbox" name="FirstHTMLFriday" id="ClassFirstHTMLFriday"></td>
-            <td><input type="checkbox" name="SecondHTMLFriday" id="ClassSecondHTMLFriday"></td>
-        </tr>
-        <tr><!--Saturday-->
-            <td>Saturday</td>
-            <td><input type="checkbox" name="FirstHTMLSaturday" id="ClassFirstHTMLSaturday"></td>
-            <td><input type="checkbox" name="SecondHTMLSaturday" id="ClassSecondHTMLSaturday"></td>
-        </tr>
-        <tr><!--Sunday-->
-            <td>Sunday</td>
-            <td><input type="checkbox" name="FirstHTMLSunday" id="ClassFirstHTMLSunday"></td>
-            <td><input type="checkbox" name="SecondHTMLSunday" id="ClassSecondHTMLSunday"></td>
-        </tr>
+    <table> 
+        <caption>Habit Tracker</caption>
+        <thead>
+            <tr>
+                <th scope="row">Day</th>
+                <th scope="row">1- Aula HTML</th>
+                <th scope="row">2- Aula HTML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--Monday-->
+                <td>Monday</td>
+                <td><input type="checkbox" name="FirstHTMLMonday" id="ClassFirstHTMLMonday"></td>
+                <td><input type="checkbox" name="SecondHTMLMonday" id="ClassSecondHTMLMonday"></td>
+            </tr>
+            <tr><!--Tuesday-->
+                <td>Tuesday</td>
+                <td><input type="checkbox" name="FirstHTMLTuesday" id="ClassFirstHTMLTuesday"></td>
+                <td><input type="checkbox" name="SecondHTMLTuesday" id="ClassSecondHTMLTuesday"></td>
+            </tr>
+            <tr><!--Wednesday-->
+                <td>Wednesday</td>
+                <td><input type="checkbox" name="FirstHTMLWednesday" id="ClassFirstHTMLWednesday"></td>
+                <td><input type="checkbox" name="SecondHTMLWednesday" id="ClassSecondHTMLWednesday"></td>
+            </tr>
+            <tr><!--Thursday-->
+                <td>Thursday</td>
+                <td><input type="checkbox" name="FirstHTMLThursday" id="ClassFirstHTMLThursday"></td>
+                <td><input type="checkbox" name="SecondHTMLThursday" id="ClassSecondHTMLThursday"></td>
+            </tr>
+            <tr><!--Friday-->
+                <td>Friday</td>
+                <td><input type="checkbox" name="FirstHTMLFriday" id="ClassFirstHTMLFriday"></td>
+                <td><input type="checkbox" name="SecondHTMLFriday" id="ClassSecondHTMLFriday"></td>
+            </tr>
+            <tr><!--Saturday-->
+                <td>Saturday</td>
+                <td><input type="checkbox" name="FirstHTMLSaturday" id="ClassFirstHTMLSaturday"></td>
+                <td><input type="checkbox" name="SecondHTMLSaturday" id="ClassSecondHTMLSaturday"></td>
+            </tr>
+            <tr><!--Sunday-->
+                <td>Sunday</td>
+                <td><input type="checkbox" name="FirstHTMLSunday" id="ClassFirstHTMLSunday"></td>
+                <td><input type="checkbox" name="SecondHTMLSunday" id="ClassSecondHTMLSunday"></td>
+            </tr>
+        </tbody>
     </table>
     
 </body>
