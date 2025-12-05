@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security</title>
+</head>
+
+<style>
+    div {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1>Test security in iframes</h1>
+
+    <p>On developing with iframes is needed think about security! if you open a iframe for a website, this website have
+        "opened" too. For this is good use: referrerpolicy and sandbox </p>
+
+    <div>
+        <p>iframe without sandbox</p>
+        <iframe src="iframe.html" frameborder="1" referrerpolicy="no-referrer">Register</iframe>
+        <hr>
+        <p>iframe with sandbox</p>
+        <iframe src="iframe.html" frameborder="1" referrerpolicy="no-referrer" sandbox="sandbox">Register</iframe>
+    </div>
+
+
+</body>
+
+</html>
