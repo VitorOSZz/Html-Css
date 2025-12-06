@@ -1,0 +1,23 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('assets/pacote-d013/images/fundo-madeira.jpg');
+    background-size: cover;
+}
+
+#social-medias {
+    text-align: right;
+}
+
+#social-medias a {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#social-medias a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
