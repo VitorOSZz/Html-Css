@@ -30,6 +30,7 @@ body {
     background-image: url(../assets/pacote-d013/images/frame-iphone.png);
     background-size: cover;
     background-attachment: fixed;
+    z-index: 1;
 }
 
 #cellphone iframe {
@@ -41,17 +42,19 @@ body {
 }
 
 #apps {
+    display: inline;
     position: absolute;
-    right: 6vw;
+    right: 0vw;
+    top: 10px;
+    z-index: 2;
 }
 
 #apps a {
-    display: block;
     min-width: 15px;
     max-width: 10vw;
     min-height: 15px;
     max-height: 10vw;
-    margin: 3px;
+    margin: 10px;
     border-radius: 50%;
 }
 
