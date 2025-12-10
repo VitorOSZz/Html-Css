@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms email and phone number</title>
+</head>
+
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form>div#end {
+        margin-top: 15px;
+    }
+
+    #EducationField,
+    #InterestCoursesField {
+        display: inline-block;
+        vertical-align: top;
+        width: 175px;
+        height: 150px;
+    }
+
+    #EducationField label,
+    #InterestCoursesField label {
+        display: block;
+    }
+</style>
+
+
+<body>
+
+    <main>
+        <form action="register.js" method="get" autocomplete="on">
+
+            <fieldset id="PersonalInformationField">
+                <legend>Personal information</legend>
+
+                <label for="name">
+                    Name:
+                    <input type="text" name="name" id="name" required>
+                </label>
+
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required autocomplete="email">
+                </label>
+
+                <label for="phonenumber">
+                    Phone number:
+                    <input type="tel" name="phonenumber" id="phonenumber" required placeholder="xx-xxxxy-xxxx"
+                        pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" autocomplete="tel">
+                </label>
+                <!-- input of email and "tel" try to help the user to dont put incorrect info, but only with script can be "perfect"-->
+            </fieldset>
+
+            <fieldset id="EducationField">
+                <legend>Education</legend>
+                Schoolar Level:
+                <label for="PrimarySchool"><input type="radio" name="SchoolarLevel" id="PrimarySchool"
+                        value="PrimarySchool"> Primary
+                    School</label>
+                <label for="SecondarySchool"><input type="radio" name="SchoolarLevel" id="SecondarySchool"
+                        value="SecondarySchool">
+                    Secondary School</label>
+                <label for="HighSchool"><input type="radio" name="SchoolarLevel" id="HighSchool" value="HighSchool">
+                    High
+                    School</label>
+                <label for="Graduation"><input type="radio" name="SchoolarLevel" id="Graduation" value="Graduation">
+                    Graduation</label>
+
+            </fieldset>
+            <fieldset id="InterestCoursesField">
+                <legend>Courses of Interest</legend>
+                <label for="SoftwareEngineer">
+                    <input type="checkbox" name="SoftwareEngineer" id="SoftwareEngineer"> Software Engineer
+                </label>
+                <label for="Medicine">
+                    <input type="checkbox" name="Medicine" id="Medicine"> Medicine
+                </label>
+                <label for="Veterinary">
+                    <input type="checkbox" name="Veterinary" id="Veterinary"> Veterinarian
+                </label>
+                <label for="Law">
+                    <input type="checkbox" name="Law" id="Law"> Law
+                </label>
+                <label for="Math">
+                    <input type="checkbox" name="Math" id="Math"> Math
+                </label>
+
+
+            </fieldset>
+            <fieldset> <!--input file *require* form use method="post" -->
+                <legend>Archive</legend>
+                <label for="Archive">
+                    <input type="file" name="Archive" id="Archive">
+                </label>
+            </fieldset>
+
+            <div id="end">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <div>
+        <p>Write your grade</p>
+        1-<input type="number" name="number1" id="number1"
+            oninput="mediumGrade.innerHTML = ((Number(number1.value)+Number(number2.value)+Number(number3.value)+Number(number4.value))/4)"
+            min="0" max="10">
+        2-<input type="number" name="number2" id="number2"
+            oninput="mediumGrade.innerHTML = ((Number(number1.value)+Number(number2.value)+Number(number3.value)+Number(number4.value))/4)"
+            min="0" max="10">
+        3-<input type="number" name="number3" id="number3"
+            oninput="mediumGrade.innerHTML = ((Number(number1.value)+Number(number2.value)+Number(number3.value)+Number(number4.value))/4)"
+            min="0" max="10">
+        4-<input type="number" name="number4" id="number4"
+            oninput="mediumGrade.innerHTML = ((Number(number1.value)+Number(number2.value)+Number(number3.value)+Number(number4.value))/4)"
+            min="0" max="10">
+        <p>your medium grade is: <output id="mediumGrade">0</output></p>
+    </div>
+
+    <div>
+        <p>From 0 to 10, how much do you liked Marvel Infinite War?</p>
+        <input type="range" name="percentmovie" id="percentmovie" min="0" max="10"
+            oninput="outputmovie.innerHTML = percentmovie.value">
+        <p>Result: <output id="outputmovie">5</output></p>
+    </div>
+
+    <div>
+        <p>When is your birthday</p>
+        <input type="date" name="birthday" id="birthday" oninput="calculateAge(birthday.value)">
+
+        <output id="outputage"></output>
+    </div>
+
+</body>
+
+<script>
+
+    function calculateAge(birthday) {
+        birthdayDate = new Date(birthday)
+        birthyear = birthdayDate.getFullYear()
+
+        ActualDate = new Date()
+        age = Number(ActualDate.getFullYear()) - birthyear - 1
+        birthdayDate.setFullYear('0000')
+        ActualDate.setFullYear('0000')
+        if (birthdayDate < ActualDate) {
+            age += 1
+        }
+
+        outputage.innerHTML = 'you is ' + age + ' years old'
+    }
+</script>
+
+</html>

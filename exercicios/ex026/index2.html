@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1>Different inputs for forms</h1>
+
+    <form action="register.js" method="post">
+        <div>
+            <label for="email">
+                Email:
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">
+                Password:
+                <input type="password" name="password" id="password" required minlength="8" maxlength="15"
+                    autocomplete="current-password">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+
+</html>

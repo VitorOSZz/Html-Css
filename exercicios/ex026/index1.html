@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+
+    <form action="register.js" autocomplete="off" method="post">
+        <p> <label for="Name">Name:</label> <input type="text" name="Name" id="Name"> </p>
+        <p> <label for="LastName">Last name:</label> <input type="text" name="LastName" id="LastName"> </p>
+        <input type="submit" value="Send">
+    </form>
+
+    <!--
+    A important fact is, method get is more insecure than post, because in get the data is visible in the URL.
+    But just use post doesnt mean that is secured, because you get the data via headers!
+    So I( and you Dev ) need to learn about HTTPS protocol, encryption of data.
+    note: get method has a limit of characters!
+    -->
+</body>
+
+</html>
