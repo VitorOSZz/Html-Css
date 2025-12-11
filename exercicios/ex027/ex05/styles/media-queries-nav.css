@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@media screen and (max-width:600px) {
+    header>div {
+        display: block;
+    }
+
+    nav#hamburger-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+    header>div {
+        display: none;
+    }
+
+    nav#hamburger-menu {
+        display: block;
+    }
+
+    #hamburger-menu li {
+        display: inline;
+        margin-left: 1em;
+        padding: 0.3em;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        max-width: 700px;
+    }
+}

@@ -1,0 +1,11 @@
+header menu {
+    display: none;
+}
+
+#comments {
+    display: none;
+}
+
+#credits::after {
+    content: 'If you want to read in web acess in: www.vzznews.com/news';
+}

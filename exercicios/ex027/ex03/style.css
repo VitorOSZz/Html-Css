@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 200px;
+}
+
+main {
+    min-height: 200px;
+    text-align: center;
+    opacity: 0.4;
+}
+
+main h2 {
+    padding: 15px 0px;
+}
+
+#portrait,
+#landscape {
+    display: none;
+}
+
+/* You can put the media queries/features on a main style.css. However, consider using tihs method only in small projects!*/
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../assets/cev-landscape.jpg');
+        background-position: left bottom;
+    }
+
+    main {
+        background-color: lightgreen;
+    }
+
+    #landscape {
+        display: block;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url('../assets/cev-portrait.jpg');
+        background-position: center bottom;
+    }
+
+    main {
+        background-color: red;
+    }
+
+    #portrait {
+        display: block;
+    }
+}

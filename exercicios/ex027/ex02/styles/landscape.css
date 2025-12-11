@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../../assets/cev-landscape.jpg');
+    background-position: left bottom;
+}
+
+main {
+    background-color: lightgreen;
+}
+
+#landscape {
+    display: block;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../../assets/cev-portrait.jpg');
+    background-position: center bottom;
+}
+
+main {
+    background-color: red;
+}
+
+#portrait {
+    display: block;
+}
