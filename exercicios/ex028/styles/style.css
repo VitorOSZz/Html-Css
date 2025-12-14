@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #5f2c82;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    height: 75vh;
+    border-radius: 2em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+main section {
+    z-index: 2;
+}
+
+main section form {
+    padding: 12px;
+}
+
+main section form h3 {
+    font-size: 2em;
+    margin: 0.7em 0em;
+}
+
+main section form div#inputs {
+    display: block;
+}
+
+main section form div#inputs label {
+    display: block;
+    width: 75vw;
+
+    background-color: #5f2c82;
+    border-radius: 8px;
+    text-align: left;
+    margin: 0.7em auto;
+}
+
+main section form div#inputs label span {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+
+    position: relative;
+    top: 25px;
+    transform: translateY(-50%);
+    padding-left: 6px;
+}
+
+main section form div#inputs label input {
+    display: inline-block;
+    border: none;
+    background-color: #94cfcd;
+    height: 2.7em;
+    width: 83%;
+    position: relative;
+    top: 12px;
+    transform: translateY(-50%);
+    border-radius: 8px;
+}
+
+#submit input,
+#submit div {
+    display: block;
+    margin: 15px auto;
+    width: 75vw;
+    height: 2.5em;
+    background-color: #94cfcd;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#submit div {
+    background-color: white;
+    border: 1px #94cfcd solid;
+}
+
+#submit div a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+div#image {
+    border-radius: 2em 2em 0px 0px;
+    background-image: url("../assets/images/metal.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 12em;
+}
+
+.align-middle {
+    position: relative;
+    top: 2%;
+
+}
