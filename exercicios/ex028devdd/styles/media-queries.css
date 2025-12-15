@@ -1,0 +1,57 @@
+@media only screen and (min-width:768px) {
+    body {
+        background: #5F2C82;
+        background: linear-gradient(180deg, rgba(95, 44, 130, 1) 0%, rgba(67, 140, 140, 1) 70%, rgba(148, 207, 205, 1) 100%);
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    div#img-metal {
+        display: inline-block;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        background-position: left;
+    }
+
+    div#register-main {
+        position: absolute;
+        display: inline-block;
+        height: 250px;
+        width: 65%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2%;
+    }
+
+    #inputs-menu label input {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    main {
+        width: 90vw;
+        max-width: 1024px;
+        height: 90vh;
+        max-height: 400px;
+    }
+
+    div#register-main {
+        height: 350px;
+        top: 60%;
+        transform: translateY(-50%);
+        left: 0px;
+        width: 48%;
+    }
+
+    div#img-metal {
+        right: 0px;
+        border-radius: 0px 20px 20px 0px;
+        width: 48%;
+        height: 100%;
+    }
+}

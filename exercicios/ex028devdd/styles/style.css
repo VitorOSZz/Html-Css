@@ -64,17 +64,18 @@ div#img-metal {
     margin-bottom: 3px;
     border-radius: 5px;
     box-sizing: border-box;
-    height: 50px;
+    height: 40px;
     padding: 4px;
 }
 
 #inputs-menu label input {
     display: inline-block;
-    height: 90%;
-    width: 75%;
+    height: 105%;
+    width: 81%;
 
     position: relative;
-    bottom: 25%;
+    left: 12px;
+    bottom: 45%;
 
     background-color: var(--color2);
     border: none;
@@ -83,7 +84,7 @@ div#img-metal {
 
 #inputs-menu label span {
     font-size: 2.3em;
-    width: 15%;
+    width: 10%;
     height: 30px;
     margin: 0px 2px;
     text-align: left;
@@ -93,19 +94,20 @@ div#img-metal {
 
 #button-submit,
 #button-forget-password {
-    border: 1px solid var(--color2);
     width: 100%;
     height: 40px;
     border-radius: 3px;
 }
 
 #button-submit {
-    background-color: var(--color3);
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
     color: white;
     margin-bottom: 10px;
 }
 
 #button-forget-password {
+    border: 1px solid var(--color2);
     text-align: center;
 }
 
