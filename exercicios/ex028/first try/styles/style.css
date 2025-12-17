@@ -103,7 +103,7 @@ main section form div#inputs label input {
 
 div#image {
     border-radius: 2em 2em 0px 0px;
-    background-image: url("../assets/images/metal.jpg");
+    background-image: url("../../assets/images/metal.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;

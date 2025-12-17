@@ -33,7 +33,7 @@ main {
 }
 
 div#img-metal {
-    background-image: url('../../ex028/assets/images/metal.jpg');
+    background-image: url('../../../ex028/assets/images/metal.jpg');
     background-size: cover;
     background-position: bottom;
 
