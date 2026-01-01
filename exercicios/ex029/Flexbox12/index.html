@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu with Flexbox</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+
+<body>
+
+    <header>
+        <div id="name">
+            <h1>My Website</h1>
+        </div>
+        <div id="menu-icon">
+            <div onclick="menuVisibility()">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+        <nav id="menu">
+            <a href="#">
+                <div class="option">Option 1</div>
+            </a>
+            <a href="#">
+                <div class="option">Option 2</div>
+            </a>
+            <a href="#">
+                <div class="option">Option 3</div>
+            </a>
+            <a href="#">
+                <div class="option">Option 4</div>
+            </a>
+            <a href="#">
+                <div class="option">Option 5</div>
+            </a>
+            <a href="#">
+                <div class="option">Option 6</div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <div>
+                <h2>Test of Flexbox</h2>
+            </div>
+            <div id="content-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis quod modi ex deserunt
+                    harum
+                    illum voluptatem necessitatibus earum ullam possimus commodi voluptas voluptatibus adipisci culpa
+                    quae
+                    provident, iste ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque ab nisi,
+                    ullam
+                    blanditiis, tempore animi, quisquam quod ipsa optio sequi maiores corporis distinctio ipsam quas!
+                    Cum
+                    animi nihil saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsa nisi, quisquam
+                    debitis neque ducimus libero voluptatibus alias, accusamus quasi voluptates. Voluptatum totam quia
+                    reiciendis, animi ipsum fugiat maiores ratione. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. At, expedita placeat. Porro aspernatur, voluptates maxime consequuntur quia rem? Quibusdam
+                    voluptatum laboriosam maiores pariatur fugiat repellat, veritatis sequi nulla suscipit error.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    function menuVisibility() {
+        console.log("menuVisibility clicked")
+        menu = document.querySelector("#menu");
+
+        if (menu.style.display == '' || menu.style.display == 'none') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+
+    addEventListener("resize", (event) => { })
+
+    onresize = (event) => {
+
+        menu = document.querySelector("#menu");
+        menu_icon = document.querySelector("#menu-icon");
+
+        if (window.screen.width >= 780) {
+            menu.style.display = 'block';
+            menu_icon.style.display = 'none';
+        } else {
+            menu.style.display = 'none';
+            menu_icon.style.display = 'block';
+        }
+    }
+</script>
+
+</html>

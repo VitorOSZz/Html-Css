@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+</head>
+
+<style>
+    main {
+        width: 75vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        margin: auto;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+        width: 80vw;
+        height: 50vh;
+
+        background-color: gray;
+
+        border-radius: 10px;
+    }
+
+    .item {
+        background-color: lightgray;
+        width: 15vw;
+        margin: 10px;
+        height: 30%;
+    }
+
+    .special {
+        margin: 0px;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+
+    <main>
+        <h1>Align Content 2</h1>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item special"></div>
+        </div>
+    </main>
+</body>
+
+</html>

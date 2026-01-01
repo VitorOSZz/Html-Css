@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flebox</title>
+</head>
+
+<style>
+    div.container {
+        background-color: lightgray;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    div.item {
+        background-color: lightblue;
+        height: 50px;
+        width: 50px;
+        margin: 6px;
+        text-align: center;
+
+        flex: auto;
+
+    }
+</style>
+
+<body>
+
+    <article>
+        <h2>Flexbox</h2>
+        <p>In css3 we have a new display! Flexbox!</p>
+    </article>
+
+    <div class="container" style="flex-direction: column;">
+        <h3>Column Direction</h3>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container" style="flex-direction: column-reverse;">
+        <h3>Column Reverse Direction</h3>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container" style="flex-direction: row;">
+        <h3>Row Direction</h3>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container" style="flex-direction: row-reverse;">
+        <h3>Row Reverse Direction</h3>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+</body>
+
+</html>

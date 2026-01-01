@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligning</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        background-color: lightgray;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container h3 {
+        text-align: center;
+        position: relative;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item1 {
+        background-color: lightblue;
+        width: 17%;
+        height: 50%;
+        margin: 10px 5px;
+    }
+
+    .item2 {
+        width: 20%;
+    }
+
+    .item3 {
+        height: 20%;
+        width: 100%;
+        background-color: lightblue;
+        margin-bottom: 5px;
+    }
+
+    .start {
+        justify-content: flex-start;
+    }
+
+    .center {
+        justify-content: center;
+    }
+
+    .end {
+        justify-content: flex-end;
+    }
+</style>
+
+<body>
+
+    <h1>Align items</h1>
+
+    <main>
+        <div class="container column">
+            <h3>Align-item: center</h3>
+            <div class="container row">
+                <div class="item1">1</div>
+                <div class="item1">2</div>
+                <div class="item1">3</div>
+                <div class="item1">4</div>
+                <div class="item1">5</div>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="item2 container column start">
+                <h3>Start</h3>
+                <div class="container column start">
+                    <div class="item3">1</div>
+                    <div class="item3">2</div>
+                    <div class="item3">3</div>
+                </div>
+            </div>
+            <div class="item2 container column center">
+                <h3>Center</h3>
+                <div class="container column center">
+                    <div class="item3">1</div>
+                    <div class="item3">2</div>
+                    <div class="item3">3</div>
+                </div>
+            </div>
+            <div class="item2 container column end">
+                <h3>End</h3>
+                <div class="container column end">
+                    <div class="item3">1</div>
+                    <div class="item3">2</div>
+                    <div class="item3" style="margin-bottom: 0px;">3</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

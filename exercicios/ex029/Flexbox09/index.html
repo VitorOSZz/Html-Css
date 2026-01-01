@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: lightslategray;
+        width: 80vw;
+        margin: 50px auto;
+    }
+
+    .item {
+        width: 190px;
+        background-color: gray;
+        margin: 5px;
+    }
+</style>
+
+<body>
+
+    <main>
+
+        <h2>flex-basis is similar to width, but instead of a predetermined fixed size, flex-basis defines a PREFERRED
+            size. if a larger size is needed, the code will attempt to adjust it.
+        </h2>
+        <div class="container">
+            <div class="item">text text texttext text texttext text text</div>
+            <div class="item">text text texttext text texttext text texttext text texttext text texttext text text</div>
+            <div class="item">text text texttext text texttext text texttext text texttext text texttext text texttext
+                text texttext text texttext text text</div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+
+</html>

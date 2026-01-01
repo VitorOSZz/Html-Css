@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinging</title>
+</head>
+
+<style>
+    main>div {
+        background-color: lightgray;
+    }
+
+    main>div>h2 {
+        text-align: center;
+    }
+
+    main>div>p {
+        text-indent: 10px;
+    }
+
+    .container {
+        display: flex;
+        height: 200px;
+    }
+
+    .item {
+        background-color: lightblue;
+        margin: 10px;
+        width: 15vw;
+    }
+</style>
+
+<body>
+
+    <h1>Justify Content</h1>
+
+    <main>
+        <div>
+            <h2>style="justify-content: center;"</h2>
+            <p>Centralize items</p>
+            <div class="container" style="justify-content: center;">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+        </div>
+
+        <div>
+            <h2>style="justify-content: space-around;"</h2>
+            <p>Calculate how many items have in the container and splice a space for each item, note: this have two
+                spaces between two items</p>
+            <div class="container" style="justify-content: space-around;">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+        </div>
+
+        <div>
+            <h2>style="justify-content: space-between;"</h2>
+            <p>Place the first item at the beginning of the main axis, the last at the end of the main axis, and
+                calculate the "space between" them
+            </p>
+            <div class="container" style="justify-content: space-between;">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+        </div>
+
+        <div>
+            <h2>style="justify-content: space-evenly;"</h2>
+            <p>Place the space for each item evenly and centralized</p>
+            <div class="container" style="justify-content: space-evenly;">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

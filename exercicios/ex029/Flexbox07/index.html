@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+</head>
+
+<style>
+    main {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .Main-container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgba(165, 42, 42, 0.335);
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 50vw;
+        height: 200px;
+
+        background-color: gray;
+        border-radius: 10px;
+    }
+
+    .column {
+        flex-flow: column;
+    }
+
+    .item {
+        margin: 3px;
+        border-radius: 10px;
+        background-color: lightblue;
+        width: 35%;
+        height: 10vh;
+    }
+
+    .item2 {
+        margin: 20px 0px;
+    }
+</style>
+
+<body>
+
+    <main>
+        <h1>Align Content</h1>
+
+        <div class="Main-container column">
+            <div class="container item2" style="align-content: space-around;">
+                <div class="item">space-around;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="container item2" style="align-content: space-between;">
+                <div class="item">space-between;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="container item2" style="align-content: space-evenly;">
+                <div class="item">space-evenly;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="container item2" style="align-content:center;">
+                <div class="item">center;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="container item2" style="align-content:flex-start;">
+                <div class="item">flex-start;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="container item2" style="align-content:flex-end;">
+                <div class="item">flex-end;</div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

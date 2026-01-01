@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow and Shrink in individual</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        width: 500px;
+        height: 250px;
+
+        background-color: lightgray;
+        margin: 30px auto;
+        border-radius: 15px;
+    }
+
+    .item {
+        background-color: aqua;
+        height: 80%;
+        flex-basis: 100px;
+        border: 1px black solid;
+        border-radius: 20px;
+
+        text-align: center;
+        align-content: center;
+    }
+
+    .item>p {
+        font-size: 1.7em;
+    }
+
+    div>h2 {
+        text-align: center;
+    }
+
+    .container2 .item {
+        flex-basis: 100px;
+    }
+
+    .container3 .item {
+        flex-basis: 250px;
+    }
+</style>
+
+<body>
+
+    <main>
+        <h2 style="text-align: center;">Flex Grow and Shrink in individual</h2>
+
+        <div>
+            <h2>Default</h2>
+            <div class="container">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-grow: 1;}<br>.item2 {flex-grow: 0;}<br>.item3 {flex-grow: 1;}</code></h2>
+            <div class="container">
+                <div class="item" style="flex-grow: 1;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-grow: 1;">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Default</h2>
+            <div class="container container2">
+                <div class="item" style="flex-grow: 0;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-grow: 0;}<br>.item2 {flex-grow: 3;}<br>.item3 {flex-grow: 1;}</code></h2>
+            <div class="container container2">
+                <div class="item" style="flex-grow: 0;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-grow: 3;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-grow: 1;">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div>
+            <h2>Default</h2>
+            <div class="container container3">
+                <div class="item" style="flex-grow: 0;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>3</p>
+                </div>
+                <div class="item" style="flex-grow: 0;">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-shrink: 3;}<br>.item2 {flex-shrink: 1;}<br>.item3 {flex-shrink: 3;}<br>.item4 {flex-shrink: 0;}</code>
+            </h2>
+            <div class="container container3">
+                <div class="item" style="flex-shrink: 3;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-shrink: 1;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-shrink: 3;">
+                    <p>3</p>
+                </div>
+                <div class="item" style="flex-shrink: 0;">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-shrink: 1;}<br>.item2 {flex-shrink: 1;}<br>.item3 {flex-shrink: 1;}<br>.item4 {flex-shrink: 0;}</code>
+            </h2>
+            <div class="container container3">
+                <div class="item" style="flex-shrink: 1;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-shrink: 1;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-shrink: 1;">
+                    <p>3</p>
+                </div>
+                <div class="item" style="flex-shrink: 0;">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-shrink: 1;}<br>.item2 {flex-shrink: 2;}<br>.item3 {flex-shrink: 2;}<br>.item4 {flex-shrink: 0;}</code>
+            </h2>
+            <div class="container container3">
+                <div class="item" style="flex-shrink: 1;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-shrink: 2;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-shrink: 2;">
+                    <p>3</p>
+                </div>
+                <div class="item" style="flex-shrink: 0;">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><code>.item1 {flex-shrink: 1;}<br>.item2 {flex-shrink: 2;}<br>.item3 {flex-shrink: 2;}<br>.item4 {flex-shrink: 1;}</code>
+            </h2>
+            <div class="container container3">
+                <div class="item" style="flex-shrink: 1;">
+                    <p>1</p>
+                </div>
+                <div class="item" style="flex-shrink: 2;">
+                    <p>2</p>
+                </div>
+                <div class="item" style="flex-shrink: 2;">
+                    <p>3</p>
+                </div>
+                <div class="item" style="flex-shrink: 1;">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

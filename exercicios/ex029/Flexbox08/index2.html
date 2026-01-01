@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penis</title>
+</head>
+
+<style>
+    :root {
+        --color1: rgb(236, 213, 157);
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        width: 60vw;
+        height: 400px;
+
+        margin: 75px auto 0px auto;
+
+        background-color: lightgray;
+    }
+
+    .stick {
+        display: flex;
+        flex-flow: column wrap;
+        background-color: var(--color1);
+        width: 30%;
+        height: 400px;
+        border-radius: 50px 50px 30px 30px;
+    }
+
+    .head {
+        background-color: rgb(249, 144, 162);
+        height: 100px;
+        width: 100%;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .balls {
+        background-color: var(--color1);
+        width: 20%;
+        height: 120px;
+        align-self: flex-end;
+    }
+
+    .left-ball {
+        border-radius: 50px 30px 30px 50px;
+    }
+
+    .right-ball {
+        border-radius: 30px 50px 50px 30px;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="balls left-ball"></div>
+            <div class="stick">
+                <div class="head"></div>
+            </div>
+            <div class="balls right-ball"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #5f2c82;
+    --color2: #94cfcd;
+    --color3: #2d6462;
+}
+
+body {
+    background-color: var(--color1);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 75vw;
+    height: 550px;
+
+    background-color: white;
+
+    box-shadow: 2px 3px 3px 0px #2f2f2fb8;
+    border-radius: 20px;
+    transition: width .4s, height .4s;
+}
+
+div#img-metal {
+    background-image: url('../../../ex028/assets/images/metal.jpg');
+    background-size: cover;
+    background-position: bottom;
+
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 10px;
+}
+
+#register-main {
+    padding: 0.3em;
+}
+
+#register-main p {
+    margin-top: 0.3em;
+    font-size: 0.8em;
+}
+
+#inputs-menu {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+#inputs-menu label {
+    display: block;
+    background-color: var(--color1);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 44px;
+    border: 2px var(--color1) solid;
+}
+
+#inputs-menu label input {
+    display: inline-block;
+    height: 40px;
+    width: 85%;
+
+    position: relative;
+    left: 44%;
+    bottom: 30%;
+
+    background-color: var(--color2);
+    border: none;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#inputs-menu label span {
+    font-size: 2.3em;
+    width: 10%;
+    height: 30px;
+    margin: 0px 2px;
+    text-align: left;
+
+    color: white;
+}
+
+#button-submit,
+#button-forget-password {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+#button-submit {
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+    color: white;
+    margin-bottom: 10px;
+}
+
+#button-forget-password {
+    border: 1px solid var(--color2);
+    text-align: center;
+}
+
+#button-forget-password a {
+    text-decoration: none;
+    color: var(--color3);
+    position: relative;
+    top: 20%;
+}
+
+#button-forget-password a span {
+    font-size: 16px;
+}
+
+.text-align-center {
+    text-align: center;
+}

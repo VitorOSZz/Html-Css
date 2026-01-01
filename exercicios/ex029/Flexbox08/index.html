@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-self</title>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: lightskyblue;
+
+        width: 80vw;
+        height: 500px;
+
+        margin: auto;
+
+        justify-content: center;
+    }
+
+    .item {
+        display: flex;
+        background-color: lightsalmon;
+
+        width: 10vw;
+        min-height: 80px;
+
+        margin: 4px;
+    }
+
+    #special1 {
+        align-self: flex-end;
+        order: 5;
+    }
+
+    #special2 {
+        align-self: center;
+        order: 2;
+    }
+
+    #special3 {
+        align-self: stretch;
+        order: 2;
+    }
+
+    #special4 {
+        order: 3;
+        align-self: center;
+    }
+</style>
+
+<body>
+
+    <main>
+        <h1>Align-Self</h1>
+
+        <div class="container">
+            <div class="item" id="special1">1</div>
+            <div class="item" id="special2">2</div>
+            <div class="item" id="special3">3</div>
+            <div class="item" id="special4">4</div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@media screen and (max-width: 780px) {
+    header {
+        flex-flow: column nowrap;
+        align-items: center;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    header>#menu>a {
+        width: 60vw;
+        display: block;
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+
+    header>#name {
+        text-align: center;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #menu-icon div:hover {
+        cursor: pointer;
+        color: red;
+    }
+
+    #menu-icon span {
+        font-size: 3em;
+    }
+
+    header>#menu {
+        display: none;
+    }
+}
