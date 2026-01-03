@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Align's Justify's</title>
+</head>
+
+<style>
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+
+    div.grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 15px;
+
+        height: 300px;
+        background-color: lightgray;
+    }
+
+    div.grid div {
+        width: 50%;
+        height: 50%;
+
+        background-color: gray
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="grid" style="align-items: start;">
+            <div>Align-items: Start</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+        <div class="grid" style="align-items: Center;">
+            <div>Align-items: Center</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+        <div class="grid" style="align-items: end;">
+            <div>Align-items: End</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+        <div class="grid" style="align-items:stretch;">
+            <div style="height: initial;">align-itens: Stretch</div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+            <div style="height: initial;"></div>
+        </div class="grid">
+        <div class="grid" style="justify-items: end;">
+            <div>justify-items: end</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+        <div class="grid" style="justify-items: stretch;">
+            <div style="width: initial;">justify-items: stretch</div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+            <div style="width: initial;"></div>
+        </div class="grid">
+        <div class="grid" style="justify-items: center;">
+            <div>justify-items: center</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+        <div class="grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div class="grid">
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand and more</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 27% 27% 27%;
+        grid-template-rows: 50px 50px 50px;
+        gap: 15px;
+        height: 300px;
+        place-content: start space-between;
+        background-color: lightgray;
+    }
+
+    .container1 {
+        grid-auto-rows: 50px
+    }
+
+    .container div {
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+
+        background-color: gray;
+    }
+</style>
+
+<body>
+
+    <h1>new features learned: grid-auto-rows, grid-auto-column, place-items, place-content, grid-template</h1>
+
+
+    <main>
+        <h2>With grid-auto-rows</h2>
+        <button onclick="addDiv('.container1')">Add</button>
+        <div class="container container1">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <h2>Without grid-auto-rows</h2>
+        <button onclick="addDiv('.container2')">Add</button>
+        <div class="container container2">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+    </main>
+</body>
+
+<script>
+    function addDiv(container) {
+        item = document.querySelector(container)
+        item.innerHTML += '<div class="item"></div>'
+    }
+</script>
+
+</html>
