@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand</title>
+</head>
+
+<style>
+    main {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+
+        height: 500px;
+        background-color: lightgray;
+    }
+
+    main div {
+        background-color: gray;
+    }
+
+    #box1 {
+        background-color: darkred;
+        grid-column: 2 / -1;
+        grid-row: 1 / 1;
+    }
+
+    #box2 {
+        background-color: darkblue;
+        /* span: is like from here add more X*/
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 3;
+    }
+
+    #box3 {
+        background-color: darkgreen;
+        /* grid-row: 2 / 4;
+        grid-column: 3 / 5; */
+        grid-area: 2/3 / 4/5;
+    }
+
+    #box4 {
+        background-color: darkorchid;
+
+        grid-area: 5/1 / 6/-1;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+header {
+    grid-area: 1/1 / span 1/-1;
+    background-color: red;
+}
+
+nav {
+    grid-area: 2/1 / span 1/-1;
+    background-color: green;
+}
+
+main {
+    grid-area: 3/1 /span 1/ span 1;
+    background-color: white;
+}
+
+aside {
+    grid-area: 3/2 / span 1/span 1;
+    background-color: aquamarine;
+}
+
+footer {
+    grid-area: -2/1/ -1/-1;
+    background-color: darkgray;
+}
