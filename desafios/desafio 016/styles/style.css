@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+
+    height: 50px;
+    gap: 5%;
+
+    background-color: aquamarine;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+main div#description {
+    grid-area: 1/2 / span 1/ span 1;
+    width: 100%;
+    padding: 5px;
+}
+
+#description-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+
+    height: 175px;
+    width: 175px;
+
+    border-radius: 50%;
+    border: 3px blue solid;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#description-img div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: url("../assets/images/guanabara-perfil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+
+
+
+    margin: 15px auto;
+}
+
+#description-text {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 5px;
+    text-align: left;
+
+}
+
+main h2 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#description-text p {
+    text-align: left;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    margin: 15px auto;
+}
+
+div#details {
+    grid-area: 2/2 / span 1/span 1;
+    background-color: rgb(199, 199, 199);
+    width: 100%;
+}
+
+div#details #details-text {
+    margin: 5px 0px;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 5px;
+}
+
+div#details span {
+    margin-left: 10px;
+}
+
+div#details span,
+div#details h2 {
+    display: inline-block;
+}
+
+.handshake {
+    margin-right: 10px;
+}
+
+div#details-video {
+    display: flex;
+    width: 100%;
+}
+
+div#details-video iframe {
+    border-radius: 25px;
+    width: 100%;
+    height: 165px;
+}
+
+div#skills {
+    grid-area: 3/2 / span 1/span 1;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skills-pattern {
+    margin-bottom: 14px;
+}
+
+.skills-pattern .skills-pattern-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-pattern .line {
+    background-color: lightgray;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.skills-pattern .line .inside-line {
+    background-color: rgb(101, 101, 230);
+    height: 10px;
+    border-radius: 5px;
+}
+
+.line-html5,
+.line-teamwork {
+    width: 90%;
+}
+
+.line-css3,
+.line-leadership {
+    width: 80%;
+}
+
+.line-javascript {
+    width: 75%;
+}
+
+.line-php {
+    width: 60%;
+}
+
+.line-adaptability {
+    width: 85%;
+}
+
+div#educational {
+    grid-area: 4/2 / span 1 /span 1;
+    width: 100%;
+}
+
+.educational-modal {
+    justify-self: end;
+    background-color: lightgray;
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.educational-modal:hover {
+    width: 96%;
+    transition-duration: .4s;
+}
+
+.educational-modal .educational-year {
+    font-weight: bold;
+}
+
+.educational-modal .educational-institution {
+    font-size: 1.2em;
+    color: rgb(8, 0, 255);
+    margin: 3px 0px;
+}
+
+.educational-pre-modal {
+    background-color: rgb(63, 63, 213);
+    border-radius: 10px 11px 11px 10px;
+}
