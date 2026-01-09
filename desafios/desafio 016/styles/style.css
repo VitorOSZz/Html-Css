@@ -1,35 +1,97 @@
+:root {
+    --main-background: rgb(211, 211, 211);
+    --inverted-background: black;
+    --text: black;
+    --inversed-text: black;
+    --emphasis: #0077ff;
+    --inversed-emphasis: #66bbff;
+}
+
+body.dark {
+    --main-background: black;
+    --inverted-background: rgb(176, 174, 174);
+    --text: white;
+    --inversed-text: black;
+    --emphasis: rgb(196, 134, 19);
+    --inversed-emphasis: rgb(255, 166, 0);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--text);
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
-
-    height: 75px;
     gap: 5%;
-    padding: 15px;
-    background-color: blue;
+    padding: 10px;
+    background-color: var(--emphasis);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-header div .material-symbols-outlined {
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    list-style-type: none;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+}
+
+header li a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 7px;
+    transition-duration: 0.35s;
+    color: var(--inversed-text);
+}
+
+header li a:hover {
+    background-color: var(--inversed-emphasis);
+    color: var(--text);
+}
+
+header nav li .material-symbols-outlined {
     font-size: 2em;
 }
 
 main {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 500px 250px 1fr;
+    grid-template-rows: 500px auto 1fr;
     justify-items: center;
+
+    border-radius: 10px;
+    background-color: var(--main-background);
 }
 
-main div#description {
+section#description {
     grid-area: 1/2 / span 1/ span 1;
     width: 100%;
-    padding: 5px;
+    font-size: 0.85em;
+
+    padding: 15px;
 }
 
 #description-img {
@@ -38,21 +100,18 @@ main div#description {
     justify-content: center;
     justify-self: center;
 
-
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
 
     border-radius: 50%;
-    border: 3px blue solid;
-    margin-top: 10px;
-    padding: 5px;
+    border: 3px var(--emphasis) solid;
 }
 
 #description-img div {
     width: 100%;
     height: 100%;
 
-    margin: 15px auto;
+    margin: auto;
 }
 
 #description-img div img {
@@ -73,7 +132,7 @@ main div#description {
 }
 
 main h2 {
-    color: blue;
+    color: var(--emphasis);
     margin-bottom: 10px;
 }
 
@@ -83,20 +142,58 @@ main h2 {
 
 #links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding: 0px;
 
     margin: 15px auto;
+    min-height: 30px;
+
 }
 
-div#details {
+#links a {
+    display: flex;
+    justify-content: center;
+
+    transition-duration: 0.4s;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+}
+
+#links a:hover {
+    scale: 1.3;
+}
+
+#links img {
+    width: 90%;
+    height: 100%;
+}
+
+#links svg {
+    fill: var(--emphasis);
+    width: 90%;
+    height: 100%;
+}
+
+#links svg:hover {
+    fill: var(--inversed-emphasis);
+}
+
+section#details {
     grid-area: 2/2 / span 1/span 1;
-    background-color: rgb(199, 199, 199);
-    width: 100%;
+    width: 90%;
+
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-div#details #details-text {
+section#details #details-text {
     margin: 5px 0px;
+}
+
+section#details #details-text h2 {
+    font-size: 1.25em;
 }
 
 .material-symbols-outlined {
@@ -104,12 +201,12 @@ div#details #details-text {
     top: 5px;
 }
 
-div#details span {
+section#details span {
     margin-left: 10px;
 }
 
-div#details span,
-div#details h2 {
+section#details span,
+section#details h2 {
     display: inline-block;
 }
 
@@ -119,18 +216,23 @@ div#details h2 {
 
 div#details-video {
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    max-height: 80%;
+    margin: auto;
+
 }
 
 div#details-video iframe {
-    border-radius: 25px;
     width: 100%;
-    height: 165px;
+    height: 100%;
+    border-radius: 25px;
 }
 
-div#skills {
+section#skills {
     grid-area: 3/2 / span 1/span 1;
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
 }
 
@@ -151,7 +253,7 @@ div#skills {
 }
 
 .skills-pattern .line .inside-line {
-    background-color: rgb(101, 101, 230);
+    background-color: var(--inversed-emphasis);
     height: 10px;
     border-radius: 5px;
 }
@@ -178,16 +280,17 @@ div#skills {
     width: 85%;
 }
 
-div#educational {
+section#educational {
     grid-area: 4/2 / span 1 /span 1;
-    width: 100%;
+    width: 90%;
 }
 
 .educational-modal {
     justify-self: end;
     background-color: lightgray;
+    color: var(--inversed-text);
     width: 98%;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
 }
@@ -215,24 +318,36 @@ div#educational {
 #projects {
     margin-top: 15px;
     grid-area: 5/2 / span 1 /span 1;
-    width: 100%;
+    width: 90%;
+    color: var(--inversed-text);
 }
 
 .project-modal {
     display: flex;
     justify-content: right;
 
-    background-color: blue;
+    background-color: var(--emphasis);
     width: 100%;
     border-radius: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+
+#projects a {
+    text-decoration: none;
+    color: var(--inversed-text);
 }
 
 .project-inside-modal {
-    width: 99%;
     background-color: lightgray;
     border-radius: 0px 5px 5px 0px;
     padding: 10px;
+    transition-duration: 0.5s;
+    margin-left: 10px;
+}
+
+.project-inside-modal:hover {
+    margin-left: 20px;
 }
 
 .project-inside-modal .project-image {
@@ -244,11 +359,6 @@ div#educational {
 .project-inside-modal img {
     width: 95%;
     height: 100%;
-}
-
-.project-inside-modal:hover {
-    transition-duration: 0.4s;
-    width: 97%;
 }
 
 .project-text {
@@ -265,15 +375,21 @@ div#educational {
 }
 
 footer {
-    background-color: blue;
-    color: white;
+    background-color: var(--emphasis);
+    color: var(--inversed-text);
     width: 100%;
     min-height: 50px;
     font-size: 1.2em;
     padding: 5px;
+    margin-top: 50px;
 }
 
 footer a {
-    color: rgb(157, 157, 233);
+    color: var(--inversed-emphasis);
     font-weight: bold;
+}
+
+#educational,
+#projects {
+    margin-top: 30px;
 }

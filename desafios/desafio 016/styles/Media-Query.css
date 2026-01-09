@@ -1,18 +1,13 @@
-@media screen and (min-width: 375px) {
-    div#details-video iframe {
-        height: 190px;
+@media screen and (max-width: 376px) {
+    main {
+        grid-template-columns: 0% 1fr 0%;
+        grid-template-rows: 450px 230px 1fr;
     }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 376px) {
     main {
-        grid-template-rows: 450px 250px 1fr;
-    }
-
-    div#details-video iframe {
-        height: 173px;
-        width: 80%;
-        margin: auto;
+        grid-template-rows: 390px auto 1fr;
     }
 }
 
@@ -20,11 +15,15 @@
     .project-inside-modal {
         height: 100%;
     }
+
+    section#details #details-text h2 {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (min-width: 768px) {
     header {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     header div .material-symbols-outlined {
@@ -32,39 +31,58 @@
     }
 
     main {
-        grid-template-columns: 3% 210px 3fr 3%;
-        grid-template-rows: 300px 510px 1fr;
+        grid-template-columns: 3% 260px 3fr 3%;
+        grid-template-rows: 400px repeat(2, auto);
         position: relative;
+
+        width: 98%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    main div#description {
-        position: fixed;
+    main section#description {
+        position: sticky;
         grid-area: 1/2 / span 1 /span 1;
-        width: 23%;
-        height: 85%;
-        align-self: flex-start;
+        top: 60px;
     }
 
-    div#details {
+    main section#description h2 {
+        font-size: 1.4em;
+    }
+
+    section#details {
         grid-area: 1/3 / span 1/span 1;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-
-    div#details-video iframe {
-        height: 195px;
-        width: 80%;
-    }
-
-    div#skills {
+    section#skills {
         grid-area: 2/3 / span 1 /span 1;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    div#educational {
+    #skills-graph {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+        font-size: 0.8em;
+    }
+
+    section#educational {
         grid-area: 3/3 / span 1 /span 1;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    div#projects {
+    section#projects {
         grid-area: 4/3 / span 1 /span 1;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .project-inside-modal {
@@ -93,15 +111,6 @@
         justify-content: end;
     }
 
-    main {
-        grid-template-rows: 400px 1fr 1fr;
-        grid-template-columns: 3% 300px 3fr 3%;
-    }
-
-    div#details-video iframe {
-        height: 320px;
-    }
-
     footer {
         display: flex;
         align-items: center;
@@ -110,30 +119,27 @@
     }
 
     footer a {
-        text-indent: 5px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-
-    main {
-        grid-template-rows: 575px 1fr 1fr;
+        margin: 0px 5px;
     }
 
-    div#description {
-        max-width: 240px;
+    #skills-graph {
+        font-size: 1.3em;
     }
 
-    div#details {
-        max-width: 1400px;
-    }
+    @media screen and (min-width: 1440px) {
 
-    div#details-video iframe {
-        height: 490px;
-    }
+        section#description {
+            max-width: 240px;
+        }
 
-    .project-inside-modal {
-        display: flex;
-        justify-content: space-between;
+        section#details {
+            max-width: 1400px;
+
+        }
+
+        .project-inside-modal {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
