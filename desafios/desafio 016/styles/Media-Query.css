@@ -5,10 +5,20 @@
 }
 
 @media screen and (min-width: 425px) {
+    main {
+        grid-template-rows: 450px 250px 1fr;
+    }
+
     div#details-video iframe {
-        height: 215px;
+        height: 173px;
         width: 80%;
         margin: auto;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .project-inside-modal {
+        height: 100%;
     }
 }
 
@@ -17,9 +27,13 @@
         margin-bottom: 40px;
     }
 
+    header div .material-symbols-outlined {
+        font-size: 2.5em;
+    }
+
     main {
-        grid-template-columns: 3% 1fr 3fr 3%;
-        grid-template-rows: 460px 1fr 1fr;
+        grid-template-columns: 3% 210px 3fr 3%;
+        grid-template-rows: 300px 510px 1fr;
         position: relative;
     }
 
@@ -48,23 +62,66 @@
     div#educational {
         grid-area: 3/3 / span 1 /span 1;
     }
+
+    div#projects {
+        grid-area: 4/3 / span 1 /span 1;
+    }
+
+    .project-inside-modal {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .project-inside-modal .project-text {
+        width: 90%;
+    }
+
+    .project-inside-modal .project-image {
+        order: 1;
+        height: 175px;
+    }
+
+    .project-text {
+        font-size: 1.1em;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        justify-content: end;
+    }
+
+    main {
+        grid-template-rows: 400px 1fr 1fr;
+        grid-template-columns: 3% 300px 3fr 3%;
+    }
 
     div#details-video iframe {
-        height: 350px;
+        height: 320px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer a {
+        text-indent: 5px;
     }
 }
 
 @media screen and (min-width: 1440px) {
 
     main {
-        grid-template-rows: 560px 1fr 1fr;
+        grid-template-rows: 575px 1fr 1fr;
     }
 
     div#description {
-        max-width: 460px;
+        max-width: 240px;
     }
 
     div#details {
@@ -75,4 +132,8 @@
         height: 490px;
     }
 
+    .project-inside-modal {
+        display: flex;
+        justify-content: space-between;
+    }
 }

@@ -7,18 +7,22 @@
 
 header {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
 
-    height: 50px;
+    height: 75px;
     gap: 5%;
+    padding: 15px;
+    background-color: blue;
+}
 
-    background-color: aquamarine;
+header div .material-symbols-outlined {
+    font-size: 2em;
 }
 
 main {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 500px 250px 1fr;
     justify-items: center;
 }
 
@@ -45,18 +49,18 @@ main div#description {
 }
 
 #description-img div {
-    position: relative;
     width: 100%;
     height: 100%;
 
-    background: url("../assets/images/guanabara-perfil.jpg");
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-
-
-
     margin: 15px auto;
+}
+
+#description-img div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
 }
 
 #description-text {
@@ -206,4 +210,70 @@ div#educational {
 .educational-pre-modal {
     background-color: rgb(63, 63, 213);
     border-radius: 10px 11px 11px 10px;
+}
+
+#projects {
+    margin-top: 15px;
+    grid-area: 5/2 / span 1 /span 1;
+    width: 100%;
+}
+
+.project-modal {
+    display: flex;
+    justify-content: right;
+
+    background-color: blue;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.project-inside-modal {
+    width: 99%;
+    background-color: lightgray;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+}
+
+.project-inside-modal .project-image {
+    text-align: center;
+    margin: 2px;
+
+}
+
+.project-inside-modal img {
+    width: 95%;
+    height: 100%;
+}
+
+.project-inside-modal:hover {
+    transition-duration: 0.4s;
+    width: 97%;
+}
+
+.project-text {
+    font-size: 1.2em;
+}
+
+.project-text:nth-child(1n) {
+    margin-top: 4px;
+}
+
+.project-text .project-name {
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    min-height: 50px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+footer a {
+    color: rgb(157, 157, 233);
+    font-weight: bold;
 }
